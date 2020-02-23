@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body class="flexCenterAll">
+    <form id="stepForm" class="formContainer">
+        <section class="stepFormStep active">
+            <div class="leftProgress">
+                <div class="progressIndex flexCenterAll">4</div>
+                <div class="leftProgressBar"></div>
+            </div>
+
+            <div class="stepContainer">
+                <label for="userName">username</label>
+                <div class="stepInputContainer">
+                    <input id="userName" class="inputField" type="text" name="userName" minlength="4">
+                    <input type="submit" class="stepFormNext" value="NEXT"></submit>
+                    <button type="button" class="stepFormPrev">BACK</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="stepFormStep">
+            <div class="leftProgress">
+                <div class="progressIndex flexCenterAll">4</div>
+                <div class="leftProgressBar"></div>
+            </div>
+
+            <div class="stepContainer">
+                <label for="email">email</label>
+                <div class="stepInputContainer">
+                    <input id="email" class="inputField" type="email" name="email">
+                    <input type="submit" class="stepFormNext" value="NEXT"></submit>
+                    <button type="button" class="stepFormPrev">BACK</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="stepFormStep">
+            <div class="leftProgress">
+                <div class="progressIndex flexCenterAll">4</div>
+                <div class="leftProgressBar"></div>
+            </div>
+
+            <div class="stepContainer">
+                <label for="password">password</label>
+                <div class="stepInputContainer">
+                    <input id="password" minlength="6" class="inputField" type="password" name="password">
+                    <input type="submit" class="stepFormNext" value="NEXT"></submit>
+                    <button type="button" class="stepFormPrev">BACK</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="stepFormStep">
+            <div class="leftProgress">
+                <div class="progressIndex flexCenterAll">4</div>
+                <div class="leftProgressBar"></div>
+            </div>
+
+            <div class="stepContainer">
+                <label>passwordRe</label>
+                <div class="stepInputContainer">
+                    <input id="passwordRe" class="inputField" type="password" name="passwordRe">
+                    <input type="submit" class="stepFormNext stepFormSubmit" value="SUBMIT"></submit>
+                    <button type="button" class="stepFormPrev">BACK</button>
+                </div>
+            </div>
+        </section>
+        
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
